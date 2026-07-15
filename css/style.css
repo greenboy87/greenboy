@@ -333,14 +333,15 @@ section > .container > h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); }
   position: absolute;
   inset: 0;
   background: radial-gradient(circle at 30% 20%, var(--accent-glow), transparent 60%);
+  mix-blend-mode: overlay;
+  pointer-events: none;
 }
 
-.avatar-placeholder {
-  font-family: var(--font-head);
-  font-size: 4rem;
-  font-weight: 700;
-  color: var(--accent);
-  z-index: 1;
+.avatar-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .about-copy h2 { margin-bottom: 20px; }
