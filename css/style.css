@@ -379,15 +379,7 @@ section > .container > h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); }
   margin-top: 40px;
 }
 
-.instagram-embeds .instagram-media {
-  width: 100% !important;
-  margin: 0 !important;
-  background: transparent !important;
-  border: 0 !important;
-  box-shadow: none !important;
-}
-
-.ig-fallback {
+.reel-card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -403,12 +395,12 @@ section > .container > h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); }
   transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
-.ig-fallback:hover {
+.reel-card:hover {
   transform: translateY(-6px);
   border-color: var(--accent-dim);
 }
 
-.ig-fallback-icon {
+.reel-card-icon {
   width: 56px;
   height: 56px;
   border-radius: 50%;
@@ -421,7 +413,7 @@ section > .container > h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); }
   font-size: 1.1rem;
 }
 
-.ig-fallback-text {
+.reel-card-text {
   color: var(--text-dim);
   font-size: 0.9rem;
   font-weight: 600;
