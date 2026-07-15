@@ -22,29 +22,6 @@ navLinks.querySelectorAll('a').forEach(link => {
   });
 });
 
-// Gallery tabs
-const tabButtons = document.querySelectorAll('.tab-btn');
-const panels = {
-  youtube: document.getElementById('youtube-grid'),
-  instagram: document.getElementById('instagram-grid'),
-};
-
-tabButtons.forEach(btn => {
-  btn.addEventListener('click', () => {
-    tabButtons.forEach(b => {
-      b.classList.remove('active');
-      b.setAttribute('aria-selected', 'false');
-    });
-    btn.classList.add('active');
-    btn.setAttribute('aria-selected', 'true');
-
-    const target = btn.dataset.tab;
-    Object.entries(panels).forEach(([key, panel]) => {
-      panel.hidden = key !== target;
-    });
-  });
-});
-
 // Scroll reveal animation
 const revealEls = document.querySelectorAll('.reveal');
 const observer = new IntersectionObserver((entries) => {
