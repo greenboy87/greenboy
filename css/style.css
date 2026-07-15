@@ -414,6 +414,16 @@ section > .container > h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); }
   gap: 24px;
 }
 
+.instagram-embeds {
+  grid-template-columns: repeat(2, 1fr);
+  align-items: start;
+}
+
+.instagram-embeds .instagram-media {
+  width: 100% !important;
+  margin: 0 !important;
+}
+
 .gallery-tile {
   border-radius: 16px;
   overflow: hidden;
